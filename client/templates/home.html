@@ -1,0 +1,16 @@
+<template name="home">
+
+    {{#markdown}}
+## Welcome to my Blog
+Here I'm talking about latest discoveries from the world of Javascript.
+    {{/markdown}}
+
+    {{{exampleHelper}}}
+
+    {{> contextExample someText='I was set in the parent templates helper as an argument.'}}
+
+    {{> contextExample dataContextHelper}}
+
+    <p>{{someNested.text}}</p>
+
+</template>
